@@ -199,6 +199,27 @@
 #define O_AUG_SPINE "spinal augment"
 #define O_AUG_PELVIC "pelvic augment"
 
+/**
+* Augment Flags
+* Flags used by /obj/item/organ/internal/augment/var/augment_flags
+* Augment flags provide mixed configuration information about their augment
+*/
+
+/// The augment can be installed in mechanical organs
+#define AUGMENT_MECHANICAL FLAG(0)
+
+/// The augment can be installed in biological organs
+#define AUGMENT_BIOLOGICAL FLAG(1)
+
+/// The augment can be installed in crystaline organs
+#define AUGMENT_CRYSTALINE FLAG(2)
+
+/// The augment is visible on body scanner results
+#define AUGMENT_SCANNABLE FLAG(3)
+
+/// The augment is visible via grab inspection
+#define AUGMENT_INSPECTABLE FLAG(4)
+
 // Bodyparts and organs.
 #define O_MOUTH    "mouth"
 #define O_EYES     "eyes"
